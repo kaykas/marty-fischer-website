@@ -4,361 +4,604 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Marty Fischer - America's Premier Sporting Clays Course Designer, NSCA Level III Instructor, and Head Coach of Georgia Southern Clay Target Team">
-    <title>Marty Fischer | Sporting Clays Course Designer & Shooting Coach</title>
+    <title>Marty Fischer | America's Premier Sporting Clays Authority</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Manrope:wght@300;400;500;700&family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#D4AF37',
+                            500: '#C5A028',
+                            600: '#B08D26',
+                        },
+                        slate: {
+                            850: '#151e2e',
+                            900: '#0f172a',
+                            950: '#020617',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                        serif: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .clip-diagonal {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px rgba(255,255,255,0.1);
+            color: transparent;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-slate-950 text-white font-sans">
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">MARTY FISCHER</div>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#contact" class="btn-primary">Contact</a></li>
-            </ul>
+    <nav class="fixed w-full z-50 bg-slate-950/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gold-500 rounded-sm flex items-center justify-center">
+                        <span class="font-heading font-bold text-slate-950 text-2xl">MF</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-heading font-bold text-xl tracking-wider text-white leading-none">MARTY FISCHER</span>
+                        <span class="text-[10px] text-gold-400 tracking-[0.2em] uppercase mt-1">Sporting Clays Authority</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="text-slate-300 hover:text-gold-400 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-widest transition-colors">About</a>
+                        <a href="#expertise" class="text-slate-300 hover:text-gold-400 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-widest transition-colors">Services</a>
+                        <a href="#portfolio" class="text-slate-300 hover:text-gold-400 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-widest transition-colors">Portfolio</a>
+                        <a href="#media" class="text-slate-300 hover:text-gold-400 px-3 py-2 rounded-md text-sm font-bold uppercase tracking-widest transition-colors">Media</a>
+                        <a href="#contact" class="bg-gold-500 hover:bg-gold-400 text-slate-950 px-6 py-2 rounded-sm text-sm font-bold uppercase tracking-widest transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 class="hero-title">America's Premier Sporting Clays Course Designer</h1>
-            <p class="hero-subtitle">35+ Years of Excellence in Shooting Instruction, Course Design & Outdoor Media</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn-primary-large">Work With Marty</a>
-                <a href="#expertise" class="btn-secondary-large">Explore Services</a>
+    <header class="relative w-full h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-slate-800">
+                <div class="w-full h-full opacity-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-700 via-slate-900 to-black"></div>
+                <div class="absolute top-0 right-0 w-1/2 h-full bg-slate-700/30 clip-diagonal"></div>
             </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">150+</span>
-                    <span class="stat-label">Courses Designed</span>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-slate-950/30 z-10"></div>
+        </div>
+
+        <div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-20">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-12 text-center">
+                    <div class="inline-flex items-center space-x-2 border-l-2 border-gold-500 pl-4 mb-6">
+                        <span class="text-gold-400 font-bold tracking-[0.25em] uppercase text-sm">America's Premier Course Designer</span>
+                    </div>
+                    <h1 class="font-heading text-6xl md:text-8xl lg:text-9xl font-bold text-white leading-[0.9] tracking-tight uppercase mb-8">
+                        Excellence <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500">Precision</span> <br>
+                        <span class="text-gold-500">Results</span>
+                    </h1>
+                    <p class="text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed mb-10">
+                        35+ years of championship-level coaching, 150+ world-class course designs, and decades of outdoor television hosting. Marty Fischer sets the standard for excellence in sporting clays.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <a href="#contact" class="group relative px-8 py-4 bg-gold-500 overflow-hidden rounded-sm">
+                            <span class="relative text-slate-950 font-bold uppercase tracking-widest text-sm flex items-center gap-3 justify-center">
+                                Work With Marty
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </a>
+                        <a href="#media" class="px-8 py-4 border border-white/20 hover:border-gold-500 hover:text-gold-400 transition-colors rounded-sm">
+                            <span class="text-white font-bold uppercase tracking-widest text-sm">View Media</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">35+</span>
-                    <span class="stat-label">Years Experience</span>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+            <span class="text-[10px] uppercase tracking-widest text-slate-500">Scroll</span>
+            <div class="w-[1px] h-12 bg-gradient-to-b from-gold-500 to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="bg-gold-500 py-16 relative z-30">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-slate-950/10">
+                <div class="text-center group">
+                    <h3 class="font-heading text-5xl md:text-6xl font-bold text-slate-950 mb-2 group-hover:scale-110 transition-transform duration-300">35+</h3>
+                    <p class="text-slate-800 font-bold uppercase tracking-widest text-xs">Years Experience</p>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">4</span>
-                    <span class="stat-label">National Championships</span>
+                <div class="text-center group">
+                    <h3 class="font-heading text-5xl md:text-6xl font-bold text-slate-950 mb-2 group-hover:scale-110 transition-transform duration-300">150+</h3>
+                    <p class="text-slate-800 font-bold uppercase tracking-widest text-xs">Course Designs</p>
+                </div>
+                <div class="text-center group">
+                    <h3 class="font-heading text-5xl md:text-6xl font-bold text-slate-950 mb-2 group-hover:scale-110 transition-transform duration-300">4</h3>
+                    <p class="text-slate-800 font-bold uppercase tracking-widest text-xs">National Championships</p>
+                </div>
+                <div class="text-center group">
+                    <h3 class="font-heading text-5xl md:text-6xl font-bold text-slate-950 mb-2 group-hover:scale-110 transition-transform duration-300">25+</h3>
+                    <p class="text-slate-800 font-bold uppercase tracking-widest text-xs">Years On TV</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="section-header">
-                <h2>About Marty Fischer</h2>
-                <p class="section-subtitle">One of America's Most Recognized Outdoor Personalities</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead">For nearly four decades, Marty Fischer has been a driving force in the world of sporting clays, combining his passion for the sport with unmatched expertise in course design, instruction, and media.</p>
+    <section id="about" class="py-24 bg-slate-900 relative overflow-hidden">
+        <div class="absolute top-0 right-0 text-[20rem] font-heading font-bold text-white opacity-[0.02] leading-none pointer-events-none select-none">
+            ELITE
+        </div>
 
-                    <p>As the <strong>Head Coach of the Georgia Southern Clay Target Team</strong> since 2020, Marty has led the team to an impressive <strong>four national titles in five years</strong>, establishing the program as a powerhouse in collegiate clay target shooting.</p>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h4 class="text-gold-500 font-bold tracking-[0.2em] uppercase text-sm mb-4">The Professional Standard</h4>
+                    <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 uppercase">Four Decades of<br>Excellence</h2>
 
-                    <p>Through <strong>SportShooting Consultants, Ltd.</strong>, which he founded in 1993, Marty has designed more than <strong>150 public and private clay target facilities</strong> throughout North America. His work has been recognized by Garden & Gun Magazine, which featured six of his designs among the nine best sporting clays courses in the nation, with Foxhall Resort and Sporting Club earning their prestigious "Best of the Best" designation.</p>
+                    <div class="space-y-6 text-slate-300 font-light text-lg">
+                        <p>
+                            Marty Fischer is not just a professional shooter—he is the authority on sporting clays. From championship competition to designing the world's most challenging courses, Marty has shaped the sport for over 35 years.
+                        </p>
+                        <p>
+                            As <span class="text-white font-medium">Head Coach of Georgia Southern Clay Target Team</span>, he's led the program to <span class="text-white font-medium">4 national championships in 5 years</span>, establishing them as a collegiate powerhouse.
+                        </p>
+                        <p>
+                            Through <span class="text-white font-medium">SportShooting Consultants, Ltd.</span>, founded in 1993, Marty has designed over <span class="text-white font-medium">150 facilities across North America</span>. Garden & Gun Magazine featured <span class="text-white font-medium">6 of his 9 "best sporting clays courses"</span> in their prestigious list.
+                        </p>
+                        <p>
+                            A <span class="text-white font-medium">NSCA Level III Certified Instructor</span> (the highest level), host of the Wing & Clay Nation podcast, author of two books, and outdoor television personality for nearly three decades on ESPN, Outdoor Channel, and Pursuit Channel.
+                        </p>
+                    </div>
 
-                    <p>A <strong>NSCA Level III Certified Instructor</strong> with 35+ years of coaching experience, Marty has dedicated his life to sharing his knowledge through multiple channels: as a television host for nearly three decades, author of two acclaimed books, host of the Wing & Clay Nation radio show, and contributor to the nation's leading outdoor publications.</p>
+                    <div class="mt-10 flex items-center gap-4">
+                        <div class="h-px flex-1 bg-white/10"></div>
+                        <span class="font-serif italic text-2xl text-gold-500">Marty Fischer</span>
+                        <div class="h-px flex-1 bg-white/10"></div>
+                    </div>
+                </div>
 
-                    <p>The Knoxville News-Sentinel once referred to him as <strong>"perhaps the most sought after gun club designer in America"</strong> - a testament to his reputation for excellence and innovation in the field.</p>
+                <div class="relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4 mt-8">
+                            <div class="aspect-[3/4] bg-slate-800 w-full rounded-sm overflow-hidden relative group">
+                                <img src="https://images.unsplash.com/photo-1591025207163-942350e47db2?w=400" alt="Sporting Clays" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity">
+                            </div>
+                            <div class="aspect-square bg-slate-800 w-full rounded-sm overflow-hidden flex items-center justify-center">
+                                <span class="font-serif text-gold-500/20 text-6xl font-bold">&</span>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="aspect-square bg-gold-500 w-full rounded-sm overflow-hidden flex flex-col items-center justify-center p-6 text-center">
+                                <i class="fa-solid fa-medal text-slate-900 text-4xl mb-3"></i>
+                                <span class="text-slate-950 font-heading font-bold uppercase leading-tight">NSCA Level III Instructor</span>
+                            </div>
+                            <div class="aspect-[3/4] bg-slate-800 w-full rounded-sm overflow-hidden relative group">
+                                <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400" alt="Clay Shooting" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="section expertise">
-        <div class="container">
-            <div class="section-header">
-                <h2>Areas of Expertise</h2>
-                <p class="section-subtitle">Comprehensive Services Across the Shooting Sports Industry</p>
-            </div>
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="expertise-icon">🎯</div>
-                    <h3>Sporting Clays Course Design</h3>
-                    <p>World-class facility design and consulting for public and private clay target venues. From concept through completion, creating challenging and memorable shooting experiences.</p>
-                    <ul class="expertise-list">
-                        <li>Complete facility master planning</li>
-                        <li>Sporting clays, 5-Stand, FITASC courses</li>
-                        <li>Trap and skeet range design</li>
-                        <li>Championship-level competition venues</li>
-                        <li>Business consulting and feasibility studies</li>
-                    </ul>
-                </div>
-
-                <div class="expertise-card">
-                    <div class="expertise-icon">🏆</div>
-                    <h3>Professional Coaching & Instruction</h3>
-                    <p>NSCA Level III Certified instruction for shooters of all skill levels, from beginners to competitive athletes seeking to elevate their game.</p>
-                    <ul class="expertise-list">
-                        <li>One-on-one private instruction</li>
-                        <li>Corporate shooting clinics</li>
-                        <li>Competition preparation</li>
-                        <li>Gun fit and equipment consultation</li>
-                        <li>Youth shooting program development</li>
-                    </ul>
-                </div>
-
-                <div class="expertise-card">
-                    <div class="expertise-icon">🎬</div>
-                    <h3>Media & Content Creation</h3>
-                    <p>Nearly three decades of experience in outdoor television and media, bringing the shooting sports to audiences nationwide.</p>
-                    <ul class="expertise-list">
-                        <li>Wing & Clay Nation radio show host</li>
-                        <li>Former Shotgun Journal TV host (1999-2009)</li>
-                        <li>ESPN and Outdoor Channel programming</li>
-                        <li>Magazine contributor (10+ publications)</li>
-                        <li>Instructional video production</li>
-                    </ul>
-                </div>
-
-                <div class="expertise-card">
-                    <div class="expertise-icon">📋</div>
-                    <h3>Target Setting & Event Management</h3>
-                    <p>Professional target setting for tournaments and competitions, ensuring fair, challenging, and entertaining experiences for participants.</p>
-                    <ul class="expertise-list">
-                        <li>Competition target setting</li>
-                        <li>Tournament management consulting</li>
-                        <li>Course certification and evaluation</li>
-                        <li>Staff training and development</li>
-                        <li>Safety protocol implementation</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="section achievements">
-        <div class="container">
-            <div class="section-header">
-                <h2>Achievements & Recognition</h2>
-                <p class="section-subtitle">A Legacy of Excellence in the Shooting Sports</p>
+    <!-- Services Section -->
+    <section id="expertise" class="py-24 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-white uppercase mb-4">World-Class Services</h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto"></div>
             </div>
 
-            <div class="achievements-content">
-                <div class="achievement-category">
-                    <h3>Course Design Excellence</h3>
-                    <ul class="achievement-list">
-                        <li><strong>150+ facilities designed</strong> across North America</li>
-                        <li><strong>Garden & Gun Magazine recognition:</strong> 6 of 9 "best sporting clays courses" featured were Marty Fischer designs</li>
-                        <li><strong>"Best of the Best" award</strong> for Foxhall Resort and Sporting Club near Atlanta (2012)</li>
-                        <li>Recognized as <strong>"perhaps the most sought after gun club designer in America"</strong> by Knoxville News-Sentinel</li>
-                    </ul>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative bg-slate-900 border border-white/5 hover:border-gold-500/50 transition-all duration-300 p-8 pt-16 overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fa-solid fa-compass-drafting text-8xl text-white"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-slate-800 rounded-sm flex items-center justify-center mb-8 group-hover:bg-gold-500 transition-colors duration-300">
+                            <i class="fa-solid fa-pen-ruler text-2xl text-white group-hover:text-slate-950"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-white uppercase mb-4 group-hover:text-gold-500 transition-colors">Course Design</h3>
+                        <p class="text-slate-400 mb-8 leading-relaxed">
+                            Architectural mastery in clay target facility design. Creating championship-level sporting clays, 5-Stand, and FITASC courses that challenge professionals and delight enthusiasts worldwide.
+                        </p>
+                        <ul class="space-y-2 text-slate-400 text-sm mb-8">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold-500 mt-1"></i>
+                                <span>Complete facility master planning</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold-500 mt-1"></i>
+                                <span>Championship competition venues</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold-500 mt-1"></i>
+                                <span>Business consulting & feasibility</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="achievement-category">
-                    <h3>Coaching Success</h3>
-                    <ul class="achievement-list">
-                        <li><strong>4 National Championships</strong> with Georgia Southern Clay Target Team in 5 years (2021, 2022, 2024, 2025)</li>
-                        <li><strong>Division II Classic All Around titles:</strong> 2021, 2022, 2023, 2025</li>
-                        <li>Built program from inception (2020) to national powerhouse</li>
-                        <li><strong>35+ years</strong> of professional coaching experience</li>
-                        <li><strong>NSCA Level III Certification</strong> (highest instructor level)</li>
-                    </ul>
+                <div class="group relative bg-slate-900 border border-white/5 hover:border-gold-500/50 transition-all duration-300 p-8 pt-16 overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fa-solid fa-chalkboard-user text-8xl text-white"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-slate-800 rounded-sm flex items-center justify-center mb-8 group-hover:bg-gold-500 transition-colors duration-300">
+                            <i class="fa-solid fa-graduation-cap text-2xl text-white group-hover:text-slate-950"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-white uppercase mb-4 group-hover:text-gold-500 transition-colors">Elite Coaching</h3>
+                        <p class="text-slate-400 mb-8 leading-relaxed">
+                            NSCA Level III certified instruction for all skill levels. From beginners to national champions, proven coaching methods that deliver measurable results.
+                        </p>
+                        <ul class="space-y-2 text-slate-400 text-sm mb-8">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold-500 mt-1"></i>
+                                <span>Private one-on-one sessions</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold-500 mt-1"></i>
+                                <span>Corporate shooting clinics</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold-500 mt-1"></i>
+                                <span>Competition preparation</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="achievement-category">
-                    <h3>Media & Publishing</h3>
-                    <ul class="achievement-list">
-                        <li><strong>Author:</strong> "The Gun Digest Book of Shotgunning" and "Limbhangers and 4-Letter Words"</li>
-                        <li><strong>Television:</strong> Nearly 3 decades hosting outdoor programming (ESPN, Outdoor Channel, Pursuit Channel)</li>
-                        <li><strong>Shotgun Journal TV:</strong> 225,000-250,000 weekly viewers (1999-2009)</li>
-                        <li><strong>Wing & Clay Nation:</strong> 64+ episodes on major podcast platforms</li>
-                        <li><strong>Regular contributor:</strong> Sporting Clays Magazine, Quail Unlimited, Sports Afield, Gun Digest, and more</li>
-                    </ul>
-                </div>
-
-                <div class="achievement-category">
-                    <h3>Professional Leadership</h3>
-                    <ul class="achievement-list">
-                        <li><strong>Founder, SportShooting Consultants, Ltd.</strong> (1993-present)</li>
-                        <li>Georgia Southern University alumnus (Class of 1974)</li>
-                        <li>Volunteer instructor for youth shooting sports programs nationwide</li>
-                        <li>Industry consultant for hunting and clay target markets</li>
-                    </ul>
+                <div class="group relative bg-slate-900 border border-white/5 hover:border-gold-500/50 transition-all duration-300 p-8 pt-16 overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fa-solid fa-tv text-8xl text-white"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-slate-800 rounded-sm flex items-center justify-center mb-8 group-hover:bg-gold-500 transition-colors duration-300">
+                            <i class="fa-solid fa-microphone-lines text-2xl text-white group-hover:text-slate-950"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-white uppercase mb-4 group-hover:text-gold-500 transition-colors">Media & Speaking</h3>
+                        <p class="text-slate-400 mb-8 leading-relaxed">
+                            Nearly 30 years as an outdoor television host and media personality. Available for speaking engagements, corporate events, and media appearances.
+                        </p>
+                        <ul class="space-y-2 text-slate-400 text-sm mb-8">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold-500 mt-1"></i>
+                                <span>Wing & Clay Nation podcast</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold-500 mt-1"></i>
+                                <span>Keynote speaking engagements</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-gold-500 mt-1"></i>
+                                <span>Product endorsements & reviews</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section class="section portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2>Featured Projects</h2>
-                <p class="section-subtitle">World-Class Facilities Designed by Marty Fischer</p>
+    <section id="portfolio" class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h4 class="text-gold-500 font-bold tracking-[0.2em] uppercase text-sm mb-2">World-Class Facilities</h4>
+                    <h2 class="font-heading text-4xl font-bold text-white uppercase">Featured Projects</h2>
+                </div>
             </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <h3>Foxhall Resort and Sporting Club</h3>
-                    <p class="portfolio-location">Atlanta, Georgia</p>
-                    <p>Garden & Gun Magazine "Best of the Best" award winner. Premier sporting clays venue featuring championship-level course design.</p>
-                </div>
 
-                <div class="portfolio-item">
-                    <h3>The Clays at Lone Oaks Farm</h3>
-                    <p class="portfolio-location">University of Tennessee</p>
-                    <p>$2.3 million clay target project featuring state-of-the-art facilities for collegiate shooting programs.</p>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="group relative bg-slate-950 border border-white/5 overflow-hidden rounded-sm hover:border-gold-500/50 transition-all">
+                    <div class="aspect-video bg-slate-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=600" alt="Sporting Clays Course" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-gold-500 text-slate-950 text-xs font-bold uppercase tracking-wider rounded-sm">Featured</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-white mb-2 group-hover:text-gold-500 transition-colors">Foxhall Resort & Sporting Club</h3>
+                        <p class="text-slate-500 text-sm mb-4">Atlanta, Georgia</p>
+                        <p class="text-slate-400 text-sm">Garden & Gun Magazine "Best of the Best" award winner. Premier championship-level sporting clays venue.</p>
+                    </div>
+                </article>
 
-                <div class="portfolio-item">
-                    <h3>Clark County Shooting Park</h3>
-                    <p class="portfolio-location">Las Vegas, Nevada</p>
-                    <p>Two 15-station championship sporting clays layouts designed for one of America's premier public shooting facilities.</p>
-                </div>
+                <article class="group relative bg-slate-950 border border-white/5 overflow-hidden rounded-sm hover:border-gold-500/50 transition-all">
+                    <div class="aspect-video bg-slate-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" alt="Course Design" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-white mb-2 group-hover:text-gold-500 transition-colors">The Clays at Lone Oaks Farm</h3>
+                        <p class="text-slate-500 text-sm mb-4">University of Tennessee</p>
+                        <p class="text-slate-400 text-sm">$2.3 million clay target project featuring state-of-the-art facilities for collegiate programs.</p>
+                    </div>
+                </article>
 
-                <div class="portfolio-item">
-                    <h3>Orvis Shooting Grounds at Pursell Farms</h3>
-                    <p class="portfolio-location">Alabama</p>
-                    <p>Complete sporting clays venue with 5-Stand and shooting school facilities at this luxury resort destination.</p>
-                </div>
+                <article class="group relative bg-slate-950 border border-white/5 overflow-hidden rounded-sm hover:border-gold-500/50 transition-all">
+                    <div class="aspect-video bg-slate-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600" alt="Range Design" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-white mb-2 group-hover:text-gold-500 transition-colors">Clark County Shooting Park</h3>
+                        <p class="text-slate-500 text-sm mb-4">Las Vegas, Nevada</p>
+                        <p class="text-slate-400 text-sm">Two 15-station championship layouts at one of America's premier public shooting facilities.</p>
+                    </div>
+                </article>
 
-                <div class="portfolio-item">
-                    <h3>Brays Island Sporting Clays</h3>
-                    <p class="portfolio-location">South Carolina</p>
-                    <p>15-station championship course expanded in 2011, serving an exclusive private club community.</p>
-                </div>
+                <article class="group relative bg-slate-950 border border-white/5 overflow-hidden rounded-sm hover:border-gold-500/50 transition-all">
+                    <div class="aspect-video bg-slate-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600" alt="Course Layout" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-white mb-2 group-hover:text-gold-500 transition-colors">Orvis Shooting Grounds</h3>
+                        <p class="text-slate-500 text-sm mb-4">Pursell Farms, Alabama</p>
+                        <p class="text-slate-400 text-sm">Complete sporting clays venue with 5-Stand and shooting school facilities at luxury resort.</p>
+                    </div>
+                </article>
 
-                <div class="portfolio-item">
-                    <h3>Coal Ridge Sporting Clays</h3>
-                    <p class="portfolio-location">Weirton, West Virginia</p>
-                    <p>Fully-automated 15-station championship course featuring cutting-edge technology and challenging presentations.</p>
-                </div>
+                <article class="group relative bg-slate-950 border border-white/5 overflow-hidden rounded-sm hover:border-gold-500/50 transition-all">
+                    <div class="aspect-video bg-slate-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600" alt="Facility Design" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-white mb-2 group-hover:text-gold-500 transition-colors">Brays Island Sporting Clays</h3>
+                        <p class="text-slate-500 text-sm mb-4">South Carolina</p>
+                        <p class="text-slate-400 text-sm">15-station championship course serving an exclusive private club community.</p>
+                    </div>
+                </article>
+
+                <article class="group relative bg-slate-950 border border-white/5 overflow-hidden rounded-sm hover:border-gold-500/50 transition-all">
+                    <div class="aspect-video bg-slate-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1434394354979-a235cd36269d?w=600" alt="Championship Course" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-white mb-2 group-hover:text-gold-500 transition-colors">Coal Ridge Sporting Clays</h3>
+                        <p class="text-slate-500 text-sm mb-4">Weirton, West Virginia</p>
+                        <p class="text-slate-400 text-sm">Fully-automated 15-station championship course with cutting-edge technology.</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Media Section -->
-    <section id="media" class="section media">
-        <div class="container">
-            <div class="section-header">
-                <h2>Media & Content</h2>
-                <p class="section-subtitle">Sharing Knowledge Through Multiple Channels</p>
+    <section id="media" class="py-24 bg-slate-950 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h4 class="text-gold-500 font-bold tracking-[0.2em] uppercase text-sm mb-2">Sharing Knowledge</h4>
+                    <h2 class="font-heading text-4xl font-bold text-white uppercase">Media & Content</h2>
+                </div>
             </div>
 
-            <div class="media-grid">
-                <div class="media-card">
-                    <h3>📻 Wing & Clay Nation</h3>
-                    <p>High-energy radio show and podcast celebrating the wing and clay shooting lifestyle. Featuring expert guests, gear reviews, hunting stories, and the "You Make the Shot" Q&A segment.</p>
-                    <div class="media-links">
-                        <a href="https://podcasts.apple.com/us/podcast/marty-fischers-wing-and-clay-nation/id1448564159" target="_blank">Apple Podcasts</a>
-                        <a href="https://www.iheart.com/podcast/256-marty-fischers-wing-and-cl-31106221/" target="_blank">iHeart Radio</a>
-                        <a href="https://tunein.com/podcasts/Sports--Recreation-Podcasts/Marty-Fischers-Wing-and-Clay-Nation-p1183859/" target="_blank">TuneIn</a>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <!-- Podcast Embed -->
+                <div class="bg-slate-900 border border-white/5 rounded-sm p-8">
+                    <h3 class="font-heading text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                        <i class="fa-solid fa-podcast text-gold-500"></i>
+                        Wing & Clay Nation Podcast
+                    </h3>
+                    <p class="text-slate-400 mb-6">High-energy show celebrating the wing and clay shooting lifestyle. Expert guests, gear reviews, and Q&A segments.</p>
+
+                    <div class="space-y-4">
+                        <a href="https://podcasts.apple.com/us/podcast/marty-fischers-wing-and-clay-nation/id1448564159" target="_blank" class="flex items-center gap-4 p-4 bg-slate-950 hover:bg-slate-800 transition-colors rounded-sm group">
+                            <i class="fab fa-apple text-3xl text-slate-400 group-hover:text-white"></i>
+                            <div>
+                                <p class="text-white font-bold">Listen on Apple Podcasts</p>
+                                <p class="text-slate-500 text-sm">64 Episodes Available</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.iheart.com/podcast/256-marty-fischers-wing-and-cl-31106221/" target="_blank" class="flex items-center gap-4 p-4 bg-slate-950 hover:bg-slate-800 transition-colors rounded-sm group">
+                            <i class="fa-solid fa-heart text-3xl text-slate-400 group-hover:text-red-500"></i>
+                            <div>
+                                <p class="text-white font-bold">Listen on iHeart Radio</p>
+                                <p class="text-slate-500 text-sm">Stream Now</p>
+                            </div>
+                        </a>
+
+                        <a href="https://tunein.com/podcasts/Sports--Recreation-Podcasts/Marty-Fischers-Wing-and-Clay-Nation-p1183859/" target="_blank" class="flex items-center gap-4 p-4 bg-slate-950 hover:bg-slate-800 transition-colors rounded-sm group">
+                            <i class="fa-solid fa-radio text-3xl text-slate-400 group-hover:text-white"></i>
+                            <div>
+                                <p class="text-white font-bold">Listen on TuneIn</p>
+                                <p class="text-slate-500 text-sm">All Episodes</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="media-card">
-                    <h3>📺 Television Career</h3>
-                    <p>Nearly three decades of outdoor television programming reaching millions of viewers nationwide.</p>
-                    <ul>
-                        <li><strong>Shotgun Journal</strong> - Outdoor Channel & Outdoor Life Network (1999-2009, 225k+ weekly viewers)</li>
-                        <li><strong>Suzuki Great Outdoors</strong> - ESPN</li>
-                        <li><strong>If It Flies...</strong> - Pursuit Channel</li>
-                        <li><strong>TNT Outdoor Explosion</strong></li>
-                    </ul>
-                </div>
+                <!-- Television & Books -->
+                <div class="space-y-6">
+                    <div class="bg-slate-900 border border-white/5 rounded-sm p-8">
+                        <h3 class="font-heading text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-tv text-gold-500"></i>
+                            Television Career
+                        </h3>
+                        <p class="text-slate-400 mb-4">Nearly 30 years of outdoor television programming</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-star text-gold-500 mt-1"></i>
+                                <div>
+                                    <p class="text-white font-bold">Shotgun Journal</p>
+                                    <p class="text-slate-400 text-sm">Outdoor Channel & Outdoor Life Network (1999-2009) • 225,000+ weekly viewers</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-star text-gold-500 mt-1"></i>
+                                <div>
+                                    <p class="text-white font-bold">Suzuki Great Outdoors</p>
+                                    <p class="text-slate-400 text-sm">ESPN</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-star text-gold-500 mt-1"></i>
+                                <div>
+                                    <p class="text-white font-bold">If It Flies...</p>
+                                    <p class="text-slate-400 text-sm">Pursuit Channel</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div class="media-card">
-                    <h3>📚 Published Works</h3>
-                    <p><strong>Books:</strong></p>
-                    <ul>
-                        <li>"The Gun Digest Book of Shotgunning" - Comprehensive guide to shotgun shooting techniques</li>
-                        <li>"Limbhangers and 4-Letter Words" - Turkey hunting stories and strategies</li>
-                    </ul>
-                    <p><strong>Magazine Contributions:</strong></p>
-                    <ul>
-                        <li>Sporting Clays Magazine</li>
-                        <li>Quail Unlimited Magazine</li>
-                        <li>Sports Afield</li>
-                        <li>Gun Digest</li>
-                        <li>Gray's Sporting Journal</li>
-                        <li>Double Gun Journal</li>
-                        <li>Clay Shooting USA</li>
-                        <li>Dove Hunter Magazine</li>
-                        <li>Turkey Call</li>
-                        <li>Southern Sporting Journal</li>
-                    </ul>
+                    <div class="bg-slate-900 border border-white/5 rounded-sm p-8">
+                        <h3 class="font-heading text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-book text-gold-500"></i>
+                            Published Works
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-gold-500 mt-1"></i>
+                                <div>
+                                    <p class="text-white font-bold">The Gun Digest Book of Shotgunning</p>
+                                    <p class="text-slate-400 text-sm">Comprehensive guide to shotgun shooting techniques</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-gold-500 mt-1"></i>
+                                <div>
+                                    <p class="text-white font-bold">Limbhangers and 4-Letter Words</p>
+                                    <p class="text-slate-400 text-sm">Turkey hunting stories and strategies</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
 
-                <div class="media-card">
-                    <h3>🎥 Instructional Videos</h3>
-                    <p>Host of five instructional hunting and shooting videos, including:</p>
-                    <ul>
-                        <li>"How to Shoot Sporting Clays / Trap and Skeet Shooting" (71 minutes)</li>
-                        <li>Multiple hunting and shooting technique videos</li>
-                        <li>Pioneered "eye cam" technology for shooting instruction</li>
-                    </ul>
+            <!-- Magazine Contributions -->
+            <div class="bg-slate-900 border border-white/5 rounded-sm p-8">
+                <h3 class="font-heading text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                    <i class="fa-solid fa-newspaper text-gold-500"></i>
+                    Regular Contributor To Leading Publications
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+                    <div class="text-slate-400 hover:text-gold-500 transition-colors">
+                        <p class="font-bold">Sporting Clays Magazine</p>
+                    </div>
+                    <div class="text-slate-400 hover:text-gold-500 transition-colors">
+                        <p class="font-bold">Gun Digest</p>
+                    </div>
+                    <div class="text-slate-400 hover:text-gold-500 transition-colors">
+                        <p class="font-bold">Sports Afield</p>
+                    </div>
+                    <div class="text-slate-400 hover:text-gold-500 transition-colors">
+                        <p class="font-bold">Quail Unlimited</p>
+                    </div>
+                    <div class="text-slate-400 hover:text-gold-500 transition-colors">
+                        <p class="font-bold">Gray's Sporting Journal</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Testimonial -->
+    <section class="relative py-32 bg-slate-900">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <i class="fa-solid fa-quote-left text-gold-500 text-6xl mb-8 opacity-50"></i>
+            <h2 class="font-serif text-3xl md:text-5xl lg:text-6xl text-white font-medium leading-tight mb-10 max-w-4xl mx-auto">
+                "Perhaps the most sought after gun club designer in America"
+            </h2>
+            <div class="font-heading font-bold text-white uppercase tracking-widest">Knoxville News-Sentinel</div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Work With Marty</h2>
-                <p class="section-subtitle">Available for Course Design, Instruction, Consulting & Speaking Engagements</p>
-            </div>
+    <section id="contact" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="font-heading text-5xl md:text-6xl font-bold text-white uppercase mb-6">Work With Marty</h2>
+                    <p class="text-slate-400 text-lg mb-8 max-w-md">Whether you need world-class course design, elite coaching, or media expertise—partner with the authority in sporting clays.</p>
 
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Services Available</h3>
-                    <ul class="services-list">
-                        <li>Sporting clays course design and consulting</li>
-                        <li>Private and group shooting instruction</li>
-                        <li>Gun club business consulting</li>
-                        <li>Tournament target setting</li>
-                        <li>Corporate shooting clinics</li>
-                        <li>Media appearances and speaking engagements</li>
-                    </ul>
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-compass-drafting text-gold-500 text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Course Design & Consulting</h4>
+                                <p class="text-slate-400 text-sm">Complete facility design, business consulting, and feasibility studies</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-graduation-cap text-gold-500 text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Private Coaching</h4>
+                                <p class="text-slate-400 text-sm">One-on-one instruction, corporate clinics, competition preparation</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-microphone text-gold-500 text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Speaking & Media</h4>
+                                <p class="text-slate-400 text-sm">Corporate events, keynote speaking, media appearances</p>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="contact-details">
-                        <h3>Connect</h3>
-                        <p><strong>Company:</strong> SportShooting Consultants, Ltd.</p>
-                        <p><strong>Location:</strong> Rincon, Georgia</p>
-                        <p><strong>Twitter/X:</strong> <a href="https://x.com/wingclaynation" target="_blank">@WingClayNation</a></p>
+                    <div class="border-t border-white/10 pt-8">
+                        <h4 class="text-white font-bold uppercase tracking-widest mb-4">Connect</h4>
+                        <p class="text-slate-400 mb-2"><span class="text-slate-500">Company:</span> SportShooting Consultants, Ltd.</p>
+                        <p class="text-slate-400 mb-4"><span class="text-slate-500">Location:</span> Rincon, Georgia</p>
+                        <a href="https://x.com/wingclaynation" target="_blank" class="inline-flex items-center gap-2 text-gold-500 hover:text-gold-400 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                            <span>@WingClayNation</span>
+                        </a>
                     </div>
                 </div>
 
-                <div class="contact-form">
-                    <h3>Get In Touch</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                <div class="bg-slate-900 border border-white/5 rounded-sm p-8">
+                    <h3 class="font-heading text-2xl font-bold text-white mb-6">Send a Message</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 bg-slate-950 border border-white/10 rounded-sm text-white placeholder-slate-500 focus:border-gold-500 focus:outline-none transition-colors">
                         </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email Address" required>
+                        <div>
+                            <input type="email" placeholder="Email Address" required class="w-full px-4 py-3 bg-slate-950 border border-white/10 rounded-sm text-white placeholder-slate-500 focus:border-gold-500 focus:outline-none transition-colors">
                         </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Phone Number">
+                        <div>
+                            <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 bg-slate-950 border border-white/10 rounded-sm text-white placeholder-slate-500 focus:border-gold-500 focus:outline-none transition-colors">
                         </div>
-                        <div class="form-group">
-                            <select required>
+                        <div>
+                            <select required class="w-full px-4 py-3 bg-slate-950 border border-white/10 rounded-sm text-white focus:border-gold-500 focus:outline-none transition-colors">
                                 <option value="">Service Interested In</option>
                                 <option value="course-design">Course Design</option>
-                                <option value="instruction">Shooting Instruction</option>
+                                <option value="coaching">Private Coaching</option>
                                 <option value="consulting">Business Consulting</option>
-                                <option value="target-setting">Target Setting</option>
                                 <option value="speaking">Speaking Engagement</option>
+                                <option value="media">Media Appearance</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <textarea rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
+                        <div>
+                            <textarea rows="5" placeholder="Tell me about your project..." required class="w-full px-4 py-3 bg-slate-950 border border-white/10 rounded-sm text-white placeholder-slate-500 focus:border-gold-500 focus:outline-none transition-colors resize-vertical"></textarea>
                         </div>
-                        <button type="submit" class="btn-primary-large">Send Message</button>
+                        <button type="submit" class="w-full px-8 py-4 bg-gold-500 hover:bg-gold-400 text-slate-950 font-bold uppercase tracking-widest transition-colors rounded-sm">
+                            Send Message
+                        </button>
                     </form>
                 </div>
             </div>
@@ -366,34 +609,60 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>MARTY FISCHER</h3>
-                    <p>Sporting Clays Course Designer | Shooting Coach | Media Personality</p>
+    <footer class="bg-slate-950 pt-24 pb-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-gold-500 rounded-sm flex items-center justify-center">
+                            <span class="font-heading font-bold text-slate-950 text-2xl">MF</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-heading font-bold text-xl tracking-wider text-white leading-none">MARTY FISCHER</span>
+                            <span class="text-[10px] text-gold-400 tracking-[0.2em] uppercase mt-1">Sporting Clays Authority</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 mb-6">Setting the standard for excellence in sporting clays course design, instruction, and outdoor media for over 35 years.</p>
+                    <div class="flex gap-4">
+                        <a href="https://podcasts.apple.com/us/podcast/marty-fischers-wing-and-clay-nation/id1448564159" target="_blank" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-gold-500 hover:text-slate-950 transition-all">
+                            <i class="fab fa-apple"></i>
+                        </a>
+                        <a href="https://x.com/wingclaynation" target="_blank" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-gold-500 hover:text-slate-950 transition-all">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://gundigest.com/author/marty-fischer" target="_blank" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-gold-500 hover:text-slate-950 transition-all">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#expertise">Expertise</a></li>
-                        <li><a href="#achievements">Achievements</a></li>
-                        <li><a href="#media">Media</a></li>
-                        <li><a href="#contact">Contact</a></li>
+
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-widest mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#expertise" class="text-slate-400 hover:text-gold-500 transition-colors text-sm">Course Design</a></li>
+                        <li><a href="#expertise" class="text-slate-400 hover:text-gold-500 transition-colors text-sm">Elite Coaching</a></li>
+                        <li><a href="#expertise" class="text-slate-400 hover:text-gold-500 transition-colors text-sm">Business Consulting</a></li>
+                        <li><a href="#expertise" class="text-slate-400 hover:text-gold-500 transition-colors text-sm">Speaking Engagements</a></li>
                     </ul>
                 </div>
-                <div class="footer-media">
-                    <h4>Media Presence</h4>
-                    <ul>
-                        <li><a href="https://podcasts.apple.com/us/podcast/marty-fischers-wing-and-clay-nation/id1448564159" target="_blank">Wing & Clay Nation Podcast</a></li>
-                        <li><a href="https://x.com/wingclaynation" target="_blank">Twitter/X</a></li>
-                        <li><a href="https://gundigest.com/author/marty-fischer" target="_blank">Gun Digest Articles</a></li>
+
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-widest mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-slate-400 hover:text-gold-500 transition-colors text-sm">About Marty</a></li>
+                        <li><a href="#portfolio" class="text-slate-400 hover:text-gold-500 transition-colors text-sm">Portfolio</a></li>
+                        <li><a href="#media" class="text-slate-400 hover:text-gold-500 transition-colors text-sm">Media & Press</a></li>
+                        <li><a href="#contact" class="text-slate-400 hover:text-gold-500 transition-colors text-sm">Contact</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Marty Fischer. All rights reserved. | SportShooting Consultants, Ltd.</p>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-500 text-xs">© 2025 Marty Fischer. All rights reserved. SportShooting Consultants, Ltd.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-slate-500 hover:text-white text-xs uppercase tracking-wider transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-slate-500 hover:text-white text-xs uppercase tracking-wider transition-colors">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
